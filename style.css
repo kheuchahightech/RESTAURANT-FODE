@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #136F63;
+    --secondary-color: #F18F01;
+    --light-color: #FFF8F0;
+}
+        
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-color);
+    color: #333;
+}
+        
+
+        
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.nav-link{
+    color: var(--light-color) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #E67E22 !important;
+}
+        
+.navbar.scrolled {
+    background-color: #136F63!important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+        
+.btn-primary {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+
+.btn-secondary {
+    background-color: #136F63;
+    border-color: #02423a;
+}
+        
+.btn-primary:hover {
+    background-color: #02423a;
+    border-color: #02423a;
+}
+
+.btn-secondary:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+}
+
+/* Bouton orange personnalisé */
+.btn-orange {
+    background-color: #E67E22;
+    color: white !important;
+    border-radius: 5px;
+    padding: 6px 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-orange:hover {
+    background-color: #02423a;
+    color: white !important;
+}
+
+.hero-section {
+    background: url('./Images/RESATAURANT.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+        
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+        
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
