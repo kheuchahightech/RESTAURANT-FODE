@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #fffaf3;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        color: #ec7f31;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 3px;
+        margin-top: 30px;
+      }
+      .menu-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 30px;
+        position: relative;
+        padding-bottom: 20px;
+      }
+      .menu-buttons .btn-custom {
+        background-color: rgb(234, 175, 67);
+        padding: 8px 25px;
+        border-radius: 10px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        border: none;
+      }
+      .underline {
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        width: 70%;
+        height: 4px;
+        background-color: black;
+      }
+      .menu-section {
+        padding: 40px 10%;
+      }
+      .row.menu-row {
+        display: flex;
+        gap: 30px;
+      }
+      .row.menu-row > .col-md-6 {
+        flex: 1 1 0;
+        max-width: 50%;
+      }
+      .menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        text-align: left;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        padding: 20px 10px;
+      }
+      .menu-item .desc {
+        flex: 1;
+      }
+      .menu-item img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 12px;
+      }
+      @media (max-width: 900px) {
+        .row.menu-row {
+          flex-direction: column;
+          gap: 0;
+        }
+        .row.menu-row > .col-md-6 {
+          max-width: 100%;
+        }
+        .menu-item {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .menu-item .desc {
+          text-align: center;
+        }
+        .menu-item img {
+          margin-left: 0;
+          margin-bottom: 15px;
+        }
+      }
+      .menu-item h5 {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 0;
+      }
+      .menu-item .price {
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 8px;
+        margin-left: 10px;
+        display: inline-block;
+      }
+      .menu-item .desc > div {
+        display: flex;
+        align-items: baseline;
+        gap: 15px;
+        margin-bottom: 8px;
+      }
+      .menu-item p {
+        font-size: 0.9rem;
+        color: #444;
+        max-width: 250px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>LE MENU</h1>
+    <div class="menu-buttons">
+      <div class="btn-custom">PLATS</div>
+      <div class="btn-custom">BOISSONS</div>
+      <div class="btn-custom">DESSERT</div>
+      <div class="underline"></div>
+    </div>
+    <div class="menu-section">
+      <div class="row menu-row">
+        <div class="col-md-6 menu-item">
+          <div class="desc">
+            <div>
+              <h5>Pizza Pimento</h5>
+              <div class="price">2000 fcfa</div>
+            </div>
+            <p>
+              Pâte fine garnie de sauce tomate, fromage fondant et de piments
+              doux légèrement relevés.
+            </p>
+          </div>
+          <img src="../Images/PLAT/Pizza.jpg" alt="Pizza Pimento" />
+        </div>
+        <div class="col-md-6 menu-item">
+          <div class="desc">
+            <div>
+              <h5>Panini Milano</h5>
+              <div class="price">3000 fcfa</div>
+            </div>
+            <p>
+              Pain croustillant, jambon italien, mozzarella, tomates fraîches et
+              pesto maison.
+            </p>
+          </div>
+          <img src="../Images/PLAT/Panini milano.jpg" alt="Panini Milano" />
+        </div>
+      </div>
+      <div class="row menu-row">
+        <div class="col-md-6 menu-item">
+          <div class="desc">
+            <div>
+              <h5>Double Burger</h5>
+              <div class="price">6000 fcfa</div>
+            </div>
+            <p>
+              Deux steaks de bœuf, cheddar, salade croquante, tomates, oignons
+              et sauce spéciale.
+            </p>
+          </div>
+          <img src="../Images/PLAT/Double Burger.jpg" alt="Double Burger" />
+        </div>
+        <div class="col-md-6 menu-item">
+          <div class="desc">
+            <div>
+              <h5>Soupou Kandia</h5>
+              <div class="price">6000 fcfa</div>
+            </div>
+            <p>
+              Plat africain à base de gombo, viande tendre, épices locales et
+              sauce onctueuse.
+            </p>
+          </div>
+          <img src="../Images/PLAT/Soupou kandia.png" alt="Soupou Kandia" />
+        </div>
+      </div>
+      <div class="row menu-row">
+        <div class="col-md-6 menu-item">
+          <div class="desc">
+            <div>
+              <h5>Riz au poisson</h5>
+              <div class="price">3000 fcfa</div>
+            </div>
+            <p>
+              Riz parfumé accompagné de poisson braisé, légumes frais et sauce
+              tomate épicée.
+            </p>
+          </div>
+          <img src="../Images/PLAT/RIZ_AU_POISSON.jpg" alt="Riz au poisson" />
+        </div>
+        <div class="col-md-6 menu-item">
+          <div class="desc">
+            <div>
+              <h5>Yassa Poulet</h5>
+              <div class="price">5000 fcfa</div>
+            </div>
+            <p>
+              Poulet mariné au citron, oignons fondants, servi avec du riz blanc
+              parfumé.
+            </p>
+          </div>
+          <img src="../Images/PLAT/Yassa poulet.png" alt="Yassa Poulet" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
