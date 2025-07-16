@@ -8,7 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lightbox CSS/JS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -45,10 +49,10 @@
         <div class="container hero-content text-center">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h1 class="display-3 fw-bold mb-4">Bienvenue au Dakar Délice</h1>
+                    <h1 class="display-3 fw-bold mb-4">Bienvenue chez Dakar Délice</h1>
                     <p class="lead mb-5">
                         Un lieu de partage et de saveurs en plein cœur de Dakar. <br />
-                        Plats traditionnels, ambiance chaleureuse et vue imprenable.
+                        Savourez Dakar dans votre assiette.
                     </p>
                     <div class="d-flex justify-content-center gap-3 mb-4">
                     <a href="#menu" class="btn btn-primary btn-lg px-4">Voir notre menu</a>
@@ -64,6 +68,292 @@
         </div>
     </section>
 
+    <!-- Section Menu -->
+    <section class="section-hero">
+        <h1>LE MENU</h1>
+        <div class="menu-buttons">
+            <div class="btn-custom">PLATS</div>
+            <div class="btn-custom">BOISSONS</div>
+            <div class="btn-custom">DESSERT</div>
+            <div class="underline"></div>
+        </div>
+
+        <div class="menu-section">
+            <div class="row menu-row">
+                <div class="col-md-6 menu-item">
+                <div class="desc">
+                    <h5>Pizza Pimento</h5>
+                    <div class="price">2000 fcfa</div>
+                    <p>
+                    Pâte fine garnie de sauce tomate<br />fromage fondant et de
+                    piments doux<br />légèrement relevés.
+                    </p>
+                </div>
+                <img src="../Images/PLAT/Pizza.jpg" alt="Pizza Pimento" />
+                </div>
+                <div class="col-md-6 menu-item">
+                <div class="desc">
+                    <h5>Pizza Pimento</h5>
+                    <div class="price">3000 fcfa</div>
+                    <p>
+                    Pâte fine garnie de sauce tomate<br />fromage fondant et de
+                    piments doux<br />légèrement relevés.
+                    </p>
+                </div>
+                <img src="../Images/PLAT/Panini milano.jpg" alt="Pizza Pimento" />
+                </div>
+            </div>
+            <div class="row menu-row">
+                <div class="col-md-6 menu-item">
+                <div class="desc">
+                    <h5>Double Burger</h5>
+                    <div class="price">6000 fcfa</div>
+                    <p>
+                    Pâte fine garnie de sauce tomate<br />fromage fondant et de
+                    piments doux<br />légèrement relevés.
+                    </p>
+                </div>
+                <img src="../Images/PLAT/Double Burger.jpg" alt="Double Burger" />
+                </div>
+                <div class="col-md-6 menu-item">
+                <div class="desc">
+                    <h5>Soupou kandia</h5>
+                    <div class="price">6000 fcfa</div>
+                    <p>
+                    Pâte fine garnie de sauce tomate<br />fromage fondant et de
+                    piments doux<br />légèrement relevés.
+                    </p>
+                </div>
+                <img src="../Images/PLAT/Soupou kandia.png" alt="Soupou kandia" />
+                </div>
+            </div>
+            <div class="row menu-row">
+                <div class="col-md-6 menu-item">
+                <div class="desc">
+                    <h5>Riz au poisson</h5>
+                    <div class="price">3000 fcfa</div>
+                    <p>
+                    Pâte fine garnie de sauce tomate<br />fromage fondant et de
+                    piments doux<br />légèrement relevés.
+                    </p>
+                </div>
+                <img src="../Images/PLAT/RIZ_AU_POISSON.jpg" alt="Riz au poisson" />
+                </div>
+                <div class="col-md-6 menu-item">
+                <div class="desc">
+                    <h5>Yassa Poulet</h5>
+                    <div class="price">5000 fcfa</div>
+                    <p>
+                    Pâte fine garnie de sauce tomate<br />fromage fondant et de
+                    piments doux<br />légèrement relevés.
+                    </p>
+                </div>
+                <img src="../Images/PLAT/Yassa poulet.png" alt="Yassa Poulet" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section class="galerie-section py-5 bg-light" id="galerie"> 
+        <div class="container">
+            <h2 class="gal text-center mb-3 display-4 fw-bold">Notre Galerie</h2>
+            <p class="paragraphe text-center mb-5 fs-5 text-muted">Plongez dans l’univers de Dakar</p>
+            <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+
+                <!--  image 1 -->
+                <div class="col">
+                    <a href="./Images/Galerie/1.jpg" data-lightbox="gallery" data-title="Plat 1">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/1.jpg" class="img-fluid gallery-img" alt="Plat 1">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 2 -->
+                <div class="col">
+                    <a href="./Images/Galerie/2.jpg" data-lightbox="gallery" data-title="Plat 2">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/2.jpg" class="img-fluid gallery-img" alt="Plat 2">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 3 -->
+                <div class="col">
+                    <a href="./Images/Galerie/3.jpg" data-lightbox="gallery" data-title="Plat 2">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/3.jpg" class="img-fluid gallery-img" alt="Plat 3">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 4 -->
+                <div class="col">
+                    <a href="./Images/Galerie/4.jpg" data-lightbox="gallery" data-title="Plat 2">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/4.jpg" class="img-fluid gallery-img" alt="Plat 4">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 5 -->
+                <div class="col">
+                    <a href="./Images/Galerie/5.jpg" data-lightbox="gallery" data-title="Plat 2">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/5.jpg" class="img-fluid gallery-img" alt="Plat 5">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 6 -->
+                <div class="col">
+                    <a href="./Images/Galerie/6.jpg" data-lightbox="gallery" data-title="Plat 6">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/6.jpg" class="img-fluid gallery-img" alt="Plat 4">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 7 -->
+                <div class="col">
+                    <a href="./Images/Galerie/7.jpg" data-lightbox="gallery" data-title="Plat 7">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/7.jpg" class="img-fluid gallery-img" alt="Plat 7">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 8 -->
+                <div class="col">
+                    <a href="./Images/Galerie/8.jpg" data-lightbox="gallery" data-title="Plat 8">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/8.jpg" class="img-fluid gallery-img" alt="Plat 48">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 9 -->
+                <div class="col">
+                    <a href="./Images/Galerie/9.jpg" data-lightbox="gallery" data-title="Plat 9">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/9.jpg" class="img-fluid gallery-img" alt="Plat 9">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 10 -->
+                <div class="col">
+                    <a href="./Images/Galerie/10.jpg" data-lightbox="gallery" data-title="Plat 10">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/10.jpg" class="img-fluid gallery-img" alt="Plat 10">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 11 -->
+                <div class="col">
+                    <a href="./Images/Galerie/11.jpg" data-lightbox="gallery" data-title="Plat 11">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/11.jpg" class="img-fluid gallery-img" alt="Plat 11">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <!--  image 12 -->
+                <div class="col">
+                    <a href="./Images/Galerie/12.jpg" data-lightbox="gallery" data-title="Plat 12">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/12.jpg" class="img-fluid gallery-img" alt="Plat 12">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 13 -->
+                <div class="col">
+                    <a href="./Images/Galerie/13.jpg" data-lightbox="gallery" data-title="Plat 12">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/13.jpg" class="img-fluid gallery-img" alt="Plat 3">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 14 -->
+                <div class="col">
+                    <a href="./Images/Galerie/14.jpg" data-lightbox="gallery" data-title="Plat 14">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/14.jpg" class="img-fluid gallery-img" alt="Plat 14">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 15 -->
+                <div class="col">
+                    <a href="./Images/Galerie/15.jpg" data-lightbox="gallery" data-title="Plat 12">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/15.jpg" class="img-fluid gallery-img" alt="Plat 15">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!--  image 16 -->
+                <div class="col">
+                    <a href="./Images/Galerie/16.jpg" data-lightbox="gallery" data-title="Plat 6">
+                    <div class="gallery-item position-relative overflow-hidden rounded-4 shadow">
+                        <img src="./Images/Galerie/6.jpg" class="img-fluid gallery-img" alt="Plat 4">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                        <i class="fas fa-search-plus text-white fs-3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </section>
 
     
 
@@ -82,21 +372,7 @@
             }
         });
         
-        // Initialisation de la navbar comme scrolled si on est déjà en bas de page
-        document.addEventListener('DOMContentLoaded', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                // Ajoute la classe après un léger délai pour permettre la transition
-                setTimeout(() => {
-                    navbar.classList.add('scrolled');
-                    setTimeout(() => {
-                        navbar.classList.remove('scrolled');
-                    }, 100);
-                }, 100);
-            }
-        });
-    </script> -->
+
+    </script>
 </body>
 </html>
